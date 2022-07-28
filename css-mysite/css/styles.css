@@ -1,0 +1,142 @@
+body{
+  margin:0;
+  text-align:center;
+  font-family: 'Merriweather', serif;
+  color:#40514E;
+}
+h1{
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color:#66BFBF;
+  line-height: 2;
+  font-size: 5.625rem;/*remember 16px=100%*=1em but if we have dynamic font size that is em and % then if we write for su[ppose
+  font family has some font size 2 em and h1 has 6 em but total em of h1 would become  8 em same with % but with static px
+  we if body has 20 px and h1 90 px then h1 at the end would have 90 px only but in newer version of css we have rem its dyanmic+ignores parent settings*/
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5rem;
+  color:#66BFBF;
+  font-weight:bold;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color:#11999E;
+}
+p{
+  line-height: 2;
+}
+a{
+  color:#11999E;
+  margin:10px 20px;
+  text-decoration: none;
+
+}
+a:hover{
+  color: #EAF6F6;
+}
+hr{
+  width:10%;
+  color:grey;
+  border:dotted;
+  border-bottom:none;
+  margin:100px auto;
+}
+.abcd{
+  width: 40%;
+  margin:0 auto;
+
+}
+
+.top{
+  background-color: #E4F9F5;
+  padding-top: 100px;
+  position: relative;
+}
+.middle-container{
+  padding:100px 0;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding:50px 0 20px;
+
+}
+.last{
+  color:#EAF6F6;
+  font-size: 0.75rem;
+  padding:10px 0;
+}
+
+.skill-row{
+  width:50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+.chilli-img{
+  width:25%;
+  float:left;
+  margin-right: 30px;
+}
+.comp-img{
+  width:25%;
+  float: right;
+  margin-left: 30px;
+}
+.pro{
+  text-decoration: underline;/*span is a inline element hence if we want ion programmer only pro to be underlined we use the span*/
+}
+.bottom-cloud{
+  position: absolute;
+  bottom:300px;
+  left:300px;
+}
+.top-cloud{
+  position: absolute;
+  top:50px;
+  right:400px;
+}
+.btn {
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 1px;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 5px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 0px 0px 0px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #337FED 1px;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+   -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+   text-decoration: none;
+}
+
+/*for an inline element we cant change its width but for an block elemenmt we can change the widthm
+hemce we osly prferr the inline block elements @supports condition
+ we change the width and they come upon same line ...images are by defaukt mopstly inline block elements*/
+/*for cenetering elements we have 1.text-allign:center in the parent element like body in this case but it doesent play a role when their is  a width for block elements
+it works only when their are inline elements and full width block elelmts but if width provideed then its better to hsve margin: 0 auto */
